@@ -1,1 +1,12 @@
+pipeline {
+    agent any
 
+    stages {
+        stage('Checkout Code') {
+            steps {
+                // Checkout the code from the Git repository
+                git 'https://github.com/greeshmajulapalli09/node-todo-app.git'
+            }
+        }
+    }
+}
